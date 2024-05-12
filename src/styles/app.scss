@@ -3,18 +3,22 @@
 // Définition des variables
 $red: #ff6060;
 $black: #000000;
+$bannerShadow: 0px 4px 4px 0px #00000040;
+$whiteText:#ffffff;
 
 // Styles
 #root {
       --red: $red;
       --black: $black;
+      --bannerShadow: $bannerShadow;
+      --whiteText: $whiteText;
 }
 
 body {
       margin: 0 auto;
       padding: 0 auto;
       font-family: 'Montserrat', sans-serif;
-      max-width: 1240px;
+      max-width: 1440px;
       align-items: center;
       color: var(--red);
 }
