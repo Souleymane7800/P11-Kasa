@@ -1,0 +1,20 @@
+// styles.scss
+
+// Définition des variables
+$red: #ff6060;
+$black: #000000;
+
+// Styles
+#root {
+      --red: $red;
+      --black: $black;
+}
+
+body {
+      margin: 0 auto;
+      padding: 0 auto;
+      font-family: 'Montserrat', sans-serif;
+      max-width: 1240px;
+      align-items: center;
+      color: var(--red);
+}
