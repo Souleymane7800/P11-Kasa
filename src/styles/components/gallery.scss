@@ -1,0 +1,21 @@
+
+
+.home__gallery {
+      width: 1240px;
+      // height: 829px;
+      background-color: var(--bgGallery);
+      padding-bottom: 50px;
+      border: 1px solid aqua;
+      margin: 0 auto;
+      background: #f7f7f7;
+      min-height: 50vh;
+      border-radius: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 3.75rem;
+      padding: 2.5rem;
+      padding-bottom: 50px;
+      display: grid; /* Utiliser une grille */
+      grid-template-columns: repeat(3, 1fr);
+}
