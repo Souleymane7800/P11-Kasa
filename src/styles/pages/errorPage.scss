@@ -1,0 +1,36 @@
+@import '../settings.scss';
+
+.header {
+      padding-top: 40px;
+}
+.error-page {
+      color: $red;
+      font-family: $font-stack;
+      text-align: center;
+      margin-bottom: 8.688rem ;
+
+      div {
+            h1 {
+                  // width: 597px;
+                  // height: 263px;
+                  // margin-top: 8.688rem;
+                  font-size: 18rem;
+                  font-weight: 700;
+                  margin: 8.688rem 0;
+            }
+
+            p {
+                  font-size: 32px;
+                  font-weight: 500;
+                  margin-bottom: 8.688rem ;
+                  margin-top: 0;
+            }
+      }
+
+      a {
+            text-decoration: none;
+            color: $black;
+            text-decoration: underline;
+            
+      }
+}

@@ -1,10 +1,12 @@
+@import '../settings.scss';
+
 .navbar {
       align-items: center;
       font-weight: 400;
       min-width: 20%;
       font-style: normal;
       font-size: 24px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: $font-stack;
 
       ul {
             display: flex;
@@ -21,14 +23,30 @@
             cursor: pointer;
       }
 
-      li {
+      li{
             text-decoration: none;
             font-weight: 500;
-            color: var(--black);
+            color: $black;
 
             &:hover,
             &.active {
                   text-decoration: underline;
             }
       }
+
+      // li {
+      //       text-decoration: none;
+      //       font-weight: 500;
+      //       color: var(--black);
+
+      //       &:hover {
+      //             text-decoration: underline;
+      //             color: var(--black);
+      //       }
+
+      //       &.active {
+      //             text-decoration: underline; // Appliquez le style lorsque le lien est actif
+      //             //font-weight: bold; // Par exemple, vous pouvez appliquer un style différent lorsque le lien est actif
+      //       }
+      // }
 }
