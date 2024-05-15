@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import '../../styles/pages/logement.scss';
 import datas from '../../data/data.json';
 import { useParams } from 'react-router-dom';
+import Collapse from '../../components/Collapse/Collapse';
+import SlideShow from '../../components/SlideShow/SlideShow';
 
 export default function Logement() {
       const [image, setImage] = useState([]);
@@ -18,10 +20,15 @@ export default function Logement() {
       }, [idLogement]);
 
       return (
-            <>
-                  <div>{idLogement}</div>;
-                  <div>{currentLogement[0].pictures}</div>
-                  <div>{currentLogement[0].description}</div>
-            </>
+            <div className='logement-page'>
+      <SlideShow pictures={currentLogement[0].pictures} numberPhotos={currentLogement[0].pictures.length} />
+      {/* <ApartmentHeader currentApartment={currentLogement[0]} /> */}
+      <div className='logement__desc__area'>
+        <Collapse title="Description" content={currentLogement[0].description} />
+        <Collapse title="Équipements" content={currentLogement[0].equipments.map((eq, index) => (
+          <li key={index}>{eq}</li>
+        ))} />
+      </div>
+    </div>
       );
 }

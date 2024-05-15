@@ -1,5 +1,9 @@
+@import '../settings.scss';
+
 .collapse__panel {
       margin-bottom: 1rem;
+      font-family: $font-stack;
+      font-weight: 700;
       // flex-basis: 50%;
       width: 91%;
       // margin:  0 108.5px;
@@ -13,8 +17,8 @@
 }
 
 .collapse__header {
-      background-color: #ff6060;
-      color: white;
+      background-color: $red;
+      color: $whiteText;
       padding: 0.5em 1em;
       border-radius: 0.5rem;
       display: flex;

@@ -1,0 +1,17 @@
+@import '../settings.scss';
+
+.logement-page {
+      color: $red;
+      font-family: $font-stack;
+      font-weight: normal;
+
+      h1 {
+            font-size: 5rem;
+      }
+
+}
+.logement__desc__area {
+      display: flex;
+      gap: 4rem;
+      
+}
