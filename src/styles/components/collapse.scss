@@ -28,9 +28,13 @@
 .visible .collapse__content {
       margin-block: 0;
       min-height: 2rem;
+      p {
+
+      }
 }
 
 .collapse__content {
+      color: $black;
       background-color: #d9d7d79c;
       padding: 1rem;
       border-radius: 0.7rem;

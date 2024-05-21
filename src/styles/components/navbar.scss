@@ -14,39 +14,37 @@
             gap: 3.563rem;
             width: 309px;
             height: 34px;
-            top: 17px;
             align-items: center;
             position: relative;
             list-style-type: none;
             padding: 0;
             margin: 0;
             cursor: pointer;
-      }
 
-      li{
-            text-decoration: none;
-            font-weight: 500;
-            color: $black;
+            a {
+                  text-decoration: none;
+                  font-weight: 500;
+                  color: $black;
 
-            &:hover,
-            &.active {
-                  text-decoration: underline;
+                  &:hover,
+                  &.active {
+                        text-decoration: underline;
+                  }
             }
       }
 
-      // li {
-      //       text-decoration: none;
-      //       font-weight: 500;
-      //       color: var(--black);
+      @media only screen and (max-width: 768px) {
+            padding: 0;
+            gap: 0;
 
-      //       &:hover {
-      //             text-decoration: underline;
-      //             color: var(--black);
-      //       }
+            ul {
+                  width: 190px;
+            }
 
-      //       &.active {
-      //             text-decoration: underline; // Appliquez le style lorsque le lien est actif
-      //             //font-weight: bold; // Par exemple, vous pouvez appliquer un style différent lorsque le lien est actif
-      //       }
-      // }
+            a {
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  font-weight: 500;
+            }
+      }
 }

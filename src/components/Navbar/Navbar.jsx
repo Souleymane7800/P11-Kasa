@@ -7,12 +7,12 @@ export default function Navbar() {
       return (
             <nav className='navbar'>
                   <ul>
-                        <li>
-                              <NavLink to="/" activeclassname="active">Accueil</NavLink>
-                        </li>
-                        <li>
-                              <NavLink to="/about"  activeclassname="active">A Propos</NavLink>
-                        </li>
+                        <NavLink to='/'>
+                              <li>Accueil</li>
+                        </NavLink>
+                        <NavLink to='/about'>
+                              <li>A Propos</li>
+                        </NavLink>
                   </ul>
             </nav>
       );
