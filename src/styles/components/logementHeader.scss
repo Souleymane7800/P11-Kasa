@@ -6,7 +6,6 @@
       margin-bottom: 1rem;
 
       @media only screen and (max-width: 768px) {
-            // Use max-width for responsiveness
             flex-direction: column;
             gap: 1rem;
       }
@@ -40,19 +39,26 @@
 }
 .logement__owner {
       width: 196px;
+
+      @media only screen and (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+      }
 }
+
 // logement owner details styles
 .logement__owner__details {
       display: flex;
       justify-content: flex-end;
-      // width: 167px;
       height: 64px;
       gap: 0.5rem;
 
       @media only screen and (max-width: 768px) {
-            order: 1; // Move details below title on mobile
+            order: 1;
             gap: 0.3rem;
             line-height: 100%;
+            height: 33px;
       }
 
       h3 {
@@ -109,6 +115,7 @@
 
       @media only screen and (max-width: 768px) {
             font-size: 1.5rem;
+            display: block;
       }
 }
 
@@ -117,6 +124,10 @@
       display: flex;
       height: 25px;
       gap: 0.5rem;
+
+      @media only screen and (max-width: 768px) {
+            height: 18px;
+      }
 
       span {
             background-color: $red;
@@ -133,7 +144,7 @@
       }
 }
 
-// Additional mobile styles (for screens <= 480px)
+// Mobile
 @media only screen and (max-width: 480px) {
       .logement__title h1 {
             font-size: 18px;

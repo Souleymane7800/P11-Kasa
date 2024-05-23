@@ -5,6 +5,11 @@
       margin-bottom: 2rem;
       position: relative;
 
+      @media only screen and (width <= 768px) {
+            height: 255px;
+            margin-bottom: 15px;
+      }
+
       img {
             position: absolute;
             width: 100%;
@@ -20,6 +25,10 @@
             &.show {
                   opacity: 1;
             }
+
+            @media only screen and (width <= 768px) {
+                  height: 255px;
+            }
       }
 }
 
@@ -28,6 +37,10 @@
       height: 415px;
       width: 100%;
       position: relative;
+
+      @media only screen and (width <= 768px) {
+            height: 255px;
+      }
 }
 
 // Button styles
@@ -50,10 +63,20 @@
 
 .btn-next {
       right: 0;
+
+      @media only screen and (width <= 768px) {
+            font-size: 1.2rem;
+            width: 2rem;
+      }
 }
 
 .btn-previous {
       left: 0;
+
+      @media only screen and (width <= 768px) {
+            font-size: 1.2rem;
+            width: 2rem;
+      }
 }
 
 // Slide counter styles
@@ -63,16 +86,8 @@
       color: $whiteText;
       text-align: center;
       bottom: 2rem;
+
+      @media only screen and (width <= 768px) {
+            display: none;
+      }
 }
-
-// Mobile styles
-// @media only screen and (max-width: 768px) {
-//       // Use max-width for responsiveness
-//       .image__container {
-//             height: 285px;
-//       }
-
-//       .image__container > img {
-//             height: 300px;
-//       }
-// }

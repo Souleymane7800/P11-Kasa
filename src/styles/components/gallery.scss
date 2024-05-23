@@ -3,12 +3,9 @@
 .home__gallery {
       background-color: $bgGallery;
       padding-bottom: 0px;
-      // margin: 0 auto;
       background: #f7f7f7;
-      // min-height: 50vh;
       border-radius: 1.5rem;
       display: flex;
-      // justify-content: space-between;
       flex-wrap: wrap;
       gap: 3.75rem;
       row-gap: 3.125rem;
@@ -18,7 +15,6 @@
 
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
             grid-template-columns: repeat(2, 1fr);
-            max-width: 1024px;
             justify-items: center;
       }
 

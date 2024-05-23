@@ -22,15 +22,10 @@
             border-radius: 1rem;
             box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
             filter: brightness(0.8);
-
-            /* Mobile */
-            // @media only screen and (width <= 768px) {
-            //       height: 255px;
-            // }
       }
 
       &__subtitle {
-            width: 249px; //averifier
+            width: 249px;
             height: 52px;
             left: 1.25rem;
             line-height: 1.6rem;

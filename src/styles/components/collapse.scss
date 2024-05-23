@@ -4,16 +4,14 @@
       margin-bottom: 1rem;
       font-family: $font-stack;
       font-weight: 700;
-      // flex-basis: 50%;
       width: 91%;
-      // margin:  0 108.5px;
       margin: 0 auto;
       cursor: pointer;
 
-      // Mobile
-      // @media only screen and (max-width: 768px) {
-      //       margin: 0;
-      // }
+      //Mobile
+      @media only screen and (max-width: 768px) {
+            width: 100%;
+      }
 }
 
 .collapse__header {
@@ -23,14 +21,23 @@
       border-radius: 0.5rem;
       display: flex;
       justify-content: space-between;
+
+      span {
+            @media only screen and (max-width: 768px) {
+                  font-size: 13px;
+            }
+      }
+
+      i {
+            @media only screen and (max-width: 768px) {
+                  font-size: 13px;
+            }
+      }
 }
 
 .visible .collapse__content {
       margin-block: 0;
       min-height: 2rem;
-      p {
-
-      }
 }
 
 .collapse__content {
@@ -46,12 +53,18 @@
       animation: slide-in 0.8s ease-in-out;
       list-style-type: none;
       padding-top: 2rem;
-      height: 65%;
+      height: 85%;
+
+      @media only screen and (max-width: 768px) {
+            font-size: 12px;
+            line-height: 17px;
+            top: -1.3rem;
+      }
 }
 
 .fa-chevron-down,
 .fa-chevron-up {
       font-size: 22px;
       cursor: pointer;
-      color: white;
+      color: $whiteText;
 }

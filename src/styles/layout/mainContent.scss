@@ -6,24 +6,16 @@
       margin: 0;
 }
 
-body, html {
+body,
+html {
       margin: 0;
 }
 
 .mainContent {
-      max-width: 1440px;
-      // padding: 2rem 5rem;
+      max-width: 1240px;
       margin: 0 auto;
-      padding: 0 100px;
 
       @media only screen and (width <= 768px) {
             padding: 0 20px;
       }
-      // @media only screen and (min-width: 768px) and (max-width: 1024px) { 
-      //       // max-width: 768px; 
-      //       // padding-top: 30px; 
-      //       // padding-bottom: 40px; 
-      //       // margin-bottom: 30px; 
-      //     }
 }
-

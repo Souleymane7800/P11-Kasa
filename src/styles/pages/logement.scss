@@ -9,9 +9,18 @@
             font-size: 5rem;
       }
 
+      @media only screen and (max-width: 768px) {
+            padding-bottom: 27px;
+      }
+
 }
 .logement__desc__area {
       display: flex;
       gap: 4.75rem;
-      
+
+      @media only screen and (max-width: 768px) {
+            
+            flex-direction: column;
+            gap: 20px;
+      }
 }

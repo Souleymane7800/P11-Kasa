@@ -16,10 +16,10 @@
 
       @media only screen and (width <= 768px) {
             padding: 20px 0 27px 0;
+            min-width: 335px;
       }
 
       @media only screen and (max-width: 480px) {
-            min-width: 335px;
             box-sizing: border-box;
       }
 
