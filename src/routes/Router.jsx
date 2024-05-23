@@ -10,14 +10,15 @@ import MainContent from '../layout/MainContent/MainContent';
 import Footer from '../layout/Footer/Footer';
 
 const HeaderFooterLayout = () => {
-      return <>
-                  <Header />
+      return (
+            <>
                   <MainContent>
+                        <Header />
                         <Outlet />
                   </MainContent>
                   <Footer />
             </>
-      
+      );
 };
 
 export const router = createBrowserRouter([

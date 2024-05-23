@@ -1,3 +1,5 @@
+@import '../settings.scss';
+
 .banner {
       position: relative;
       max-width: 1240px;
@@ -5,22 +7,16 @@
       height: 223px;
       width: 100%;
       margin-bottom: 50px;
-      // margin: 50px 100px 43px 100px;
       border-radius: 1rem;
       background-color: #000000;
-      box-shadow: var(--bannerShadow);
+      box-shadow: $bannerShadow;
 
       @media only screen and (width <= 768px) {
             place-items: flex-start;
-            height: 140px;
+            height: 111px;
             display: flex;
             align-items: center;
-      }
-
-      @media only screen and (max-width: 480px) {
-            .banner {
-                  height: 100px;
-            }
+            margin-bottom: 1.375rem;
       }
 
       &__text {
@@ -34,13 +30,14 @@
             justify-content: center;
             align-items: center;
             font-weight: 700;
-            font-size: 3rem;
-            color: white;
+            font-size: clamp(1.5rem, 2.727vw + 0.886rem, 3rem);
+            color: $whiteText;
             text-align: center;
 
             @media only screen and (max-width: 768px) {
-                  display: flex;
+                  // display: flex;
                   font-size: 24px;
+                  height: 48px;
                   width: 225px;
                   text-align: left;
                   left: 16px;

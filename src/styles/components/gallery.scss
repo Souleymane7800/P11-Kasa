@@ -1,14 +1,14 @@
+@import '../settings.scss';
+
 .home__gallery {
-      width: calc(1240px - 100px);
-      background-color: var(--bgGallery);
+      background-color: $bgGallery;
       padding-bottom: 0px;
-      border: 1px solid aqua;
-      margin: 0 auto;
+      // margin: 0 auto;
       background: #f7f7f7;
-      min-height: 50vh;
+      // min-height: 50vh;
       border-radius: 1.5rem;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       flex-wrap: wrap;
       gap: 3.75rem;
       row-gap: 3.125rem;
@@ -16,15 +16,26 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
 
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 1024px;
+            justify-items: center;
+      }
+
       @media only screen and (width <= 768px) {
             width: 100%;
             display: grid;
             align-items: center;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             background: none;
             padding: 0;
             border-radius: 1.5rem;
-            gap: 1.5rem;
+            gap: 1.25rem;
+      }
+
+      @media only screen and (max-width: 480px) {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
       }
 }
