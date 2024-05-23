@@ -4,19 +4,49 @@
       margin: 0 108.5px;
       margin: 0;
 
+      @media only screen and (width <= 768px) {
+            padding-inline: 0;
+            margin: 19px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+      }
+
       .collapse__panel {
             width: 1023px;
+            @media only screen and (width <= 768px) {
+                  width: 100%;
+            }
 
             .collapse__header {
                   font-size: 24px;
+                  @media only screen and (width <= 768px) {
+                        font-size: 13px;
+                  }
 
                   i {
                         font-size: 24px;
+                        @media only screen and (width <= 768px) {
+                              font-size: 13px;
+                        }
                   }
             }
       }
 }
 
-.about__img :last-child {
-      height: 16rem;
+.about__img {
+      @media only screen and (width <= 768px) {
+            height: 111px;
+
+            .image__banner_img {
+                  height: 111px;
+            }
+            .image__container {
+                  height: 111px;
+                  img {
+                        height: 111px;
+                  }
+            }
+      }
 }
