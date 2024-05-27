@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'; // Import de PropTypes
 
 export default function Card({ id, title, cover }) {
-      console.log(id);
       return (
             <Link to={`/logement/${id}`}>
                   <div className='card'>

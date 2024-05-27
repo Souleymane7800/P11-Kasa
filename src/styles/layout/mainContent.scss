@@ -14,8 +14,10 @@ html {
 .mainContent {
       max-width: 1240px;
       margin: 0 auto;
+      padding-bottom: 50px;
 
       @media only screen and (width <= 768px) {
-            padding: 0 20px;
+            margin: 0 20px;
+            padding-bottom: 0;
       }
 }

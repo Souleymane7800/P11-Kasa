@@ -1,16 +1,15 @@
 .about__container {
+      display: flex;
+      flex-direction: column;
       padding-inline: 6rem;
-      margin-bottom: 5rem;
-      margin: 0 108.5px;
+      gap: 30px;
       margin: 0;
 
       @media only screen and (width <= 768px) {
-            padding-inline: 0;
-            margin: 19px 0px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
+            margin: 22px 0px;
+            padding: 0;
+            display: grid;
+            width: 100%;
       }
 
       .collapse__panel {
