@@ -16,8 +16,12 @@ html {
       margin: 0 auto;
       padding-bottom: 50px;
 
+      @media (max-width: 1239px) {
+            margin-left: clamp(15px, 10%, 20px);
+            margin-right: clamp(15px, 10%, 20px);
+      }
+
       @media only screen and (width <= 768px) {
-            margin: 0 20px;
             padding-bottom: 0;
       }
 }
