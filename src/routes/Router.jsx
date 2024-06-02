@@ -9,6 +9,7 @@ import Header from '../components/Header/Header';
 import MainContent from '../layout/MainContent/MainContent';
 import Footer from '../layout/Footer/Footer';
 
+// eslint-disable-next-line react-refresh/only-export-components
 const HeaderFooterLayout = () => {
       return (
             <>

@@ -34,17 +34,36 @@
       }
 }
 
-.about__img {
-      @media only screen and (width <= 768px) {
-            height: 111px;
+.about {
+      &__img {
+            height: 223px;
+            margin-bottom: 38px;
 
             .image__banner_img {
-                  height: 111px;
+                  height: 223px;
+
+                  .image__container {
+                        height: 223px;
+
+                        img {
+                              height: 223px;
+                        }
+                  }
             }
-            .image__container {
+
+            @media only screen and (max-width: 768px) {
                   height: 111px;
-                  img {
+
+                  .image__banner_img {
                         height: 111px;
+                  }
+
+                  .image__container {
+                        height: 111px;
+
+                        img {
+                              height: 111px;
+                        }
                   }
             }
       }

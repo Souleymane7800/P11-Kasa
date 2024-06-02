@@ -1,8 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import '../../styles/components/logementHeader.scss';
 
 export default function LogementHeader({ currentLogement }) {
-      console.log(currentLogement);
       // Split du nom
       const name = currentLogement.host.name.split(' ');
       const rating = currentLogement.rating;

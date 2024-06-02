@@ -9,7 +9,6 @@ import LogementHeader from '../../components/LogementHeader/LogementHeader';
 
 export default function Logement() {
       const [image, setImage] = useState([]);
-      console.log(image);
       const idLogement = useParams('id').id;
       const currentLogement = datas.filter((data) => data.id === idLogement);
 
